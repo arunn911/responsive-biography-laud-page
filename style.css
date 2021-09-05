@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html body{
+    width:100%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+}
+.home{
+    background-color: rgb(39, 38, 38);
+    height: 100vh;
+}
+.home .intro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:325px;
+    align-items: center;
+    color: #fff;
+}
+.home .intro h1{
+    font-size: 40px;
+}
+.home .intro p{
+    font-size: 15px;
+    padding:10px 0;
+}
+.home nav{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+}
+.home nav a{
+    color: rgb(236, 233, 227);
+}
+.box{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.about .heading{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.about p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.about .about-info{
+    padding-left: 50px;
+    width:50%;
+}
+.about .image-box{
+    width:50%;
+    padding-left: 160px;
+}
+.about .image-box img{
+    width:15rem;
+    
+}
+.about .quote-box{
+    background-color: rgb(39, 38, 38);
+    color:rgb(236, 233, 227);
+    height:100px;
+    text-align: center;
+}
+.about .quote-box p{
+    padding:40px 0;
+}
+.achievement .heading{
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+.achievement .award-box{
+    display: flex;
+    justify-content: space-around
+}
+.achievement .award{
+    width:250px;
+    border: 0.1px solid lightslategray;
+    border-radius: 5px;
+    box-shadow: gray;
+    padding: 20px;
+}
+.works{
+    display: flex;
+    justify-content: space-around;
+}
+.works .head{
+    text-align: center;
+    padding: 50px;
+}
+.footer{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .f-box{
+    padding:50px;
+    width:250px;
+}
+.f-box .head1{
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.f-box .info{
+    color:rgb(236, 236, 236);
+}
+.f-box span{
+    color:slategray;
+}
+.f-box .source{
+    color: rgb(38, 0, 253);
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 991px) {
+    .home nav{
+        width:60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box {
+      flex-direction: column;
+    }
+    .about .about-info{
+        width: 90%;
+        padding-left: 5px;
+    }
+    .about .image-box{
+        width:auto;
+        padding-left:0;
+    }
+    .achievement .award-box{
+        gap:1.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .works{
+        width: 90%;
+     flex-direction: column;
+     padding-left: 10px;
+    }
+    .footer{
+       flex-direction: column;
+       align-items: center;
+    }
+    .footer .f-box{
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+  }
